@@ -1,0 +1,88 @@
+/* Estilos generales */
+body {
+    font-family: "Latin Modern Roman";
+    font-style: italic
+    margin: 0;
+    padding: 0;
+    background-image: url('https://w0.peakpx.com/wallpaper/949/976/HD-wallpaper-nubes-aesthetic-estrellas-fondo-de-pantalla-luna-noche-sky.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Estilos de encabezado con fondo oscuro */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    color: rgba(255, 255, 255, 0.644);
+}
+
+h1 span {
+    transition: .5s linear;
+}
+h1:hover span:nth-child(1){
+    margin-right: 5px;   
+}
+
+h1:hover span:nth-child(1):after{
+    content: "'";
+}
+
+h1:hover span :nth-child(2){
+    margin-left: 30px;
+}
+
+h1:hover span{
+    color: rgb(240, 218, 24);
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff
+    0 0 40px rgb(228, 62, 12) ;
+    
+}
+
+main{
+    color: rgb(255, 255, 255);
+}
+/* Estilos de animación con fondo claro */
+.animation-section {
+    text-align: center;
+    padding: 80px;
+    background-color: rgba(255, 255, 255, 0.014); /* Fondo claro semi-transparente */
+}
+
+/* Estilos de botón animado con colores personalizados */
+.animated-button {
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    color: rgba(236, 241, 241, 0.774);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilos de pie de página con fondo oscuro */
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilos de botón animado con animación de círculo */
+.animated-button {
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+    border-radius: 8px; /* Forma inicial: recuadro */
+}
+
+.animated-button:hover {
+    background-color: #57560473;
+    transform: scale(1.1); /* Aumentar el tamaño al pasar el mouse */
+    border-radius: 50%; /* Cambiar a forma de círculo */
+}
+
+.animated-button:focus {
+    outline: none;
+    background-color: #661400;
+}
